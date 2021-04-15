@@ -1,0 +1,19 @@
+.ex1{
+    background-color : blue;
+    height : 10em;
+    width : 10em;
+    left: 200px;
+    top: 100px;
+}
+
+.ex2{
+    background-color : yellow;
+    height : 20em;
+    width : 20em;
+}
+
+.ex3{
+    background-color : green;
+    height : 10em;
+    width : 5em;
+}

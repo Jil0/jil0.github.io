@@ -1,0 +1,22 @@
+/* CSS de l'exercice 7 */
+
+#conteneur {
+    height: 200px;
+    width: 100%;
+    margin: auto;
+    background-color: hotpink;
+}
+
+#carre1 {
+    background-color: grey;
+    height: 200pxs;
+    width: 80%;
+    float: left;
+}
+
+#carre2 {
+    background-color: red;
+    color: white;
+    float: left;
+    width: 200px;
+}

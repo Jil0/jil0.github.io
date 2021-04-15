@@ -1,0 +1,50 @@
+/* We delete the markup point from the list */
+
+li {
+    list-style: none;
+}
+
+#navBar {
+    background-color: darkblue;
+    left:0px;
+    top: 0px;
+    position:fixed;
+    height: 60px;
+    width: 100%;
+    font-family: sans-serif;
+    font-size: larger;
+}
+
+#navBar li{
+    background-color: white;
+    display: block;
+    float: left;
+    height: 27px;
+    width: 100px;
+    border:3px dashed darkblue;
+    margin-left: 200px;
+    margin-top: 10px;
+    text-align: center;
+    padding: 2px;
+    
+}
+
+#navBar a {
+    
+    padding: 5px;
+    text-decoration: none;
+    color:darkblue;
+}
+
+#navBar li:hover {
+    background-color: darkblue;
+    color: white;
+    border:3px dashed white;
+    border-radius: 10px;
+
+}
+
+#navBar a:hover {
+    color: white;
+}
+

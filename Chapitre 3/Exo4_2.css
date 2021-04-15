@@ -1,0 +1,8 @@
+/* CSS de l'exercice 4-2 */
+
+.first {
+    position: relative;
+    height: 300px;
+    width: 300px;
+    background : radial-gradient(red,blue,rgb(1, 230, 1),yellow,orange,rgb(221, 0, 0));
+}

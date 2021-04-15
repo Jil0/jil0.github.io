@@ -1,0 +1,22 @@
+/* CSS de l'exercice 5 */
+
+#bb2 {
+    text-align: center;
+    background-color: palegreen; 
+    height: 450px; 
+    width: 650px;
+    position: absolute;
+    z-index: 2;
+    top: 30px;
+    left: 30px;
+}
+
+#fond {
+    background-color: rgb(170, 170, 170);
+    height: 450px; 
+    width: 650px;
+    position: absolute;
+    z-index: 1;
+    top: 20px;
+    left: 40px;
+}

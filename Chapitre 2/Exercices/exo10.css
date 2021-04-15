@@ -1,0 +1,84 @@
+/* CSS de l'exercice 10 */
+
+.bandeau {
+  background-color: cyan;
+  height: 100px;
+}
+.bandeau p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40px;
+  text-align: center;
+}
+
+
+
+.container{
+  display: flex;
+}
+
+.menu_container {
+  height: 700px;
+  width: 20%;
+}
+
+.menu1{
+  height: 350px;
+  width: 100%;
+  background-color: green;
+}
+
+.menu1 p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 10%;
+  top: 280px;
+  text-align: center;
+}
+
+.menu2{
+  height: 350px;
+  width: 100%;
+  background-color: palevioletred;
+}
+
+.menu2 p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 10%;
+  top: 600px;
+  text-align: center;
+}
+
+
+
+
+.contenu {
+  background-color: gold;
+  height: 700px;
+  width: 80%;
+  display: inline-block;
+}
+.contenu p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 460px;
+  text-align: center;
+}
+
+
+
+
+.piedpage {
+  background-color: lightgreen;
+  height: 100px;
+}
+.piedpage p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 840px;
+  text-align: center;
+}

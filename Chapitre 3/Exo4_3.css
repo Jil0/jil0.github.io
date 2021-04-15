@@ -1,0 +1,13 @@
+/* CSS de l'exercice 4-2 */
+
+.carre {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    height: 300px;
+    width: 300px;
+    background-color: fuchsia;
+    -webkit-box-shadow: 8px 6px 39px 16px rgba(0,0,0,0.81);
+    -moz-box-shadow: 8px 6px 39px 16px rgba(0,0,0,0.81);
+    box-shadow: 8px 6px 39px 16px rgba(0,0,0,0.81);
+}

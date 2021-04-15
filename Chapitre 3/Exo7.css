@@ -1,0 +1,40 @@
+/* CSS de l'exercice 7 */
+
+.grid-container {
+    margin:auto;
+  display: grid;
+  width: 900px;
+  height: 400px;
+  grid-template-columns: 2fr 1fr 2fr 4fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  gap: 4px 4px;
+  grid-template-areas:
+  "red fuschia fuschia saumon saumon gold"
+  "green fuschia fuschia saumon saumon marais"
+  "lightgreen vertfoncé cyan saumon saumon vertpale"
+  "violet violet violet saumon saumon red1";
+}
+
+.fuschia { grid-area: fuschia; background-color: rgb(212,58,155); }
+
+.red { grid-area: red; background-color: rgb(203, 46, 89);}
+
+.green { grid-area: green; background-color: rgb(76, 138, 65);}
+
+.lightgreen { grid-area: lightgreen; background-color: rgb(121, 150, 55);}
+
+.violet { grid-area: violet; background-color: rgb(83,67,119);}
+
+.vertfoncé { grid-area: vertfoncé; background-color: rgb(60,133,88);}
+
+.cyan { grid-area: cyan; background-color: rgb(0,201,193);}
+
+.saumon { grid-area: saumon; background-color: rgb(250,109,102);}
+
+.gold { grid-area: gold; background-color: rgb(249,193,76);}
+
+.marais { grid-area: marais; background-color: rgb(0,125,134);}
+
+.vertpale { grid-area: vertpale; background-color: rgb(0,199,146);}
+
+.red1 { grid-area: red1; background-color: rgb(236,32,54);}

@@ -1,0 +1,9 @@
+/* CSS de l'exercice 4-2 */
+.first {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(73, 146, 255);
+    border-radius: 0px 170px 170px 170px;
+    z-index: 1;
+}

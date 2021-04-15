@@ -1,0 +1,111 @@
+/* CSS de l'exercice 11 */
+
+.bandeau {
+  background-color: cyan;
+  height: 100px;
+}
+.bandeau p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 40px;
+  text-align: center;
+}
+
+
+
+.container{
+  display: flex;
+}
+
+.menu_container {
+  height: 700px;
+  width: 20%;
+}
+
+.menu1{
+  height: 350px;
+  width: 100%;
+  background-color: green;
+}
+
+.menu1 p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 10%;
+  top: 280px;
+  text-align: center;
+}
+
+.menu2{
+  height: 350px;
+  width: 100%;
+  background-color: palevioletred;
+}
+
+.menu2 p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 10%;
+  top: 600px;
+  text-align: center;
+}
+
+
+.container_contenu {
+  background-color: gold;
+  height: 700px;
+  width: 80%;
+  display: inline-block;
+  position: relative;
+}
+
+.contenu {
+  background-color: gold;
+  height: 700px;
+  width: 80%;
+  display: inline-block;
+}
+.contenu p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 70%;
+  left: 41%;
+  top: 12%;
+  text-align: left;
+  font-size: larger;
+  
+}
+
+.news {
+  background-color: red;
+  height: 300px;
+  width: 20%;
+  position: absolute;
+  top: 0%;
+  right:0%;
+}
+.news p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  text-align: center;
+}
+
+
+
+
+
+
+.piedpage {
+  background-color: lightgreen;
+  height: 100px;
+}
+.piedpage p{
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 840px;
+  text-align: center;
+}

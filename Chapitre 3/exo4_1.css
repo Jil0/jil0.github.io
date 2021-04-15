@@ -1,0 +1,43 @@
+/* CSS du TD3 exo 4 */
+
+.first {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    background-color: rgb(73, 146, 255);
+    border-radius: 0px 170px 170px 170px;
+    z-index: 1;
+}
+
+.second {
+    position: absolute;
+    height: 385px;
+    width: 385px;
+    background-color: rgb(165, 78, 132);
+    border-radius: 0px 170px 170px 170px;
+    z-index: 2;
+    top: 15px;
+    left: 15px;
+}
+
+.third {
+    position: absolute;
+    height: 365px;
+    width: 365px;
+    background-color: rgb(73, 146, 255);
+    border-radius: 0px 165px 165px 165px;
+    z-index: 3;
+    top: 25px;
+    left: 25px;
+}
+
+.fourth {
+    position: absolute;
+    height: 345px;
+    width: 345px;
+    background-color: rgb(165, 78, 132);
+    border-radius: 0px 160px 160px 160px;
+    z-index: 4;
+    top: 35px;
+    left: 35px;
+}

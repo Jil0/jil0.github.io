@@ -1,0 +1,193 @@
+/* CSS de l'exercice 4-2 */
+#carte {
+    position: relative;
+}
+
+.lille_soleil {
+    position: absolute;
+    top : 15px;
+    left: 240px;
+ }
+
+ .caen_soleilNuage {
+    position: absolute;
+    top : 50px;
+    left: 150px;
+ }
+
+ #caen1 {
+    position: absolute;
+    top : 25px;
+    left: 0px;
+    z-index: 2;
+ }
+
+ #caen2 {
+    position: absolute;
+    top : 23px;
+    left: 3px;
+    z-index: 1;
+ }
+
+.reims_soleil {
+   position: absolute;
+   top : 70px;
+   left: 310px;
+}
+
+.paris_soleil {
+    position: absolute;
+    top : 110px;
+    left: 230px;
+ }
+
+.strasbourg_nuage {
+    position: absolute;
+    top : 110px;
+    left: 385px;
+ }
+
+ .brest_soleilNuage {
+    position: absolute;
+    top : 105px;
+    left: 10px;
+ }
+
+ #brest1 {
+    position: absolute;
+    top : 25px;
+    left: 0px;
+    z-index: 2;
+ }
+
+ #brest2 {
+    position: absolute;
+    top : 23px;
+    left: 3px;
+    z-index: 1;
+ }
+
+ .lemans_soleilNuage {
+    position: absolute;
+    top : 130px;
+    left: 150px;
+ }
+
+ #lemans1 {
+    position: absolute;
+    top : 25px;
+    left: 0px;
+    z-index: 2;
+ }
+
+ #lemans2 {
+    position: absolute;
+    top : 23px;
+    left: 3px;
+    z-index: 1;
+ }
+ 
+ .nantes_nuageSoleil {
+    position: absolute;
+    top : 150px;
+    left: 80px;
+ }
+
+ #nantes1 {
+    position: absolute;
+    top : 25px;
+    left: 0px;
+    z-index: 2;
+ }
+
+ #nantes2 {
+    position: absolute;
+    top : 23px;
+    left: 3px;
+    z-index: 1;
+ }
+
+ .dijon_soleilNuage {
+    position: absolute;
+    top : 130px;
+    left: 310px;
+ }
+
+ #dijon1 {
+    position: absolute;
+    top : 25px;
+    left: 0px;
+    z-index: 2;
+ }
+
+ #dijon2 {
+    position: absolute;
+    top : 23px;
+    left: 3px;
+    z-index: 1;
+ }
+
+ .lyon_nuageSoleil {
+    position: absolute;
+    top : 223px;
+    left: 330px;
+ }
+
+ #lyon1 {
+    position: absolute;
+    top : 25px;
+    left: 0px;
+    z-index: 2;
+ }
+
+ #lyon2 {
+    position: absolute;
+    top : 23px;
+    left: 3px;
+    z-index: 1;
+ }
+
+ .limoges_nuageSoleil {
+    position: absolute;
+    top : 240px;
+    left: 200px;
+ }
+
+ #limoges1 {
+    position: absolute;
+    top : 25px;
+    left: 0px;
+    z-index: 2;
+ }
+
+ #limoges2 {
+    position: absolute;
+    top : 23px;
+    left: 3px;
+    z-index: 1;
+ }
+
+ .bordeaux_nuage {
+    position: absolute;
+    top : 290px;
+    left: 90px;
+ }
+
+ .toulouse_nuage {
+    position: absolute;
+    top : 350px;
+    left: 170px;
+ }
+
+ .corsenord_nuage {
+    position: absolute;
+    top : 445px;
+    left: 457px;
+ }
+
+ .corsesud_nuage {
+    position: absolute;
+    top : 482px;
+    left: 472px;
+ }
+

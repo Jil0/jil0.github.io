@@ -1,0 +1,24 @@
+/* CSS de l'exercice 7 */
+
+.conteneur {
+  width: 100%;
+  max-width: 600px;
+  height: 200px;
+  margin: auto;
+}
+
+.square-left {
+  background-color: rgb(187, 187, 187);
+  width: 50%;
+  height: 200px;
+  float: left;
+}
+
+.square-right {
+  background-color: red;
+  width: 50%;
+  color: white;
+  width: 200px;
+  float: left;
+  height: 200px;
+}
