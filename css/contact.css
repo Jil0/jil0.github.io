@@ -1,0 +1,209 @@
+body{background:#cccccc;}
+#main{background:#ffffff;width:800px;margin:10px auto;}
+header h1{margin-top:30px; padding-top: 30px;}
+header div{height:120px;}
+main img{height:50px; width: 50px; float:left;margin: 0 10px 0 0;}
+header img{height:200px;float:left;margin: 0 10px 0 0;}
+#main>header {height:200px;}
+header li{display:inline}
+main>article{padding:10px;padding:10px;}
+h2{line-height:1em}
+header li a {display:inline-block;width:100px;background:blue;text-align:center;color:white;text-decoration:none;padding:5px;}
+header li a:hover{background:#666666;}
+section {margin:10px;}
+aside {float:right;width:150px;background:#eeeeee;padding:10px;margin:0 0 20px 10px;text-align: justify;}
+article{text-align: justify;margin:50px 0;}
+footer{background:#454545;height:90px;}
+
+footer a:hover {color:#a9d0f5; }
+footer ul {width:120px;float:left;margin-left:40px;}
+section header img{height:80px;float:right;margin-left:10px;}
+
+
+/* Formulaire */
+
+/* Exo formulaire CSS */
+
+*:focus {
+    outline: none ;
+}
+
+body {
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode";
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Conteneur */
+
+.contact_form fieldset {
+    width: 450px;
+    height: 330px;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Liste */ 
+
+.contact_form ul {
+    width: 450px;
+    list-style: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 5px;
+}
+
+
+.contact_form label {
+    width: 150px;
+    display: inline-block;
+    float: left;
+    margin-top: 10px;
+}
+
+.contact_form input{
+    height: 15px;
+    width: 150px;
+    padding: 5px 8px;
+    margin-top: 10px;
+}
+
+.contact_form li .import{
+    height: 15px;
+    width: 200px;
+    padding: 5px 0px;
+    border:none;
+}
+
+.contact_form ul button{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.form_aide {
+    font-size: 11px;
+    display: none;
+}
+
+.form_aide {
+    background: #d45252;
+    border-radius: 3px 3px 3px 3px;
+    color: white;
+    margin-left:8px;
+    margin-top: 11px;
+    padding: 1px 6px;
+    z-index: 999; /* mettre au premier plan */
+    position: absolute; /* pour gérer simplement les messages sur plusieurs lignes */
+    }
+
+/* Style CSS des inputs */
+
+.contact_form input, .contact_form textarea {
+    border: 1px solid #aaa;
+    box-shadow: 0px 0px 3px #ccc, O 10px 15px #eee inset;
+    border-radius: 4px;
+    -moz-transition: padding .25s;
+    -webkit-transition: padding .25s;
+    -o-transition: padding .25s;
+    transition: padding .25s;
+}
+
+.contact_form input:focus, .contact_form textarea:focus {
+    background: #fff;
+    border: 1px solid #555;
+    box-shadow: 0 0 3px #aaa;
+    padding-right:40px;
+}
+
+/* style CSS3 des Button */
+button {
+    background-color: #68b12f;
+    background: -webkit-gradient(linear, left top, left bottom, from(#68b12f), to(#50911e));
+    background: -webkit-linear-gradient(top, #68b12f, #50911e);
+    background: -moz-linear-gradient(top, #68b12f, #50911e);
+    background: -ms-linear-gradient(top, #68b12f, #50911e);
+    background: -o-linear-gradient(top, #68b12f, #50911e);
+    background: linear-gradient(top, #68b12f, #50911e);
+    border: 1px solid #509111;
+    border-bottom: 1px solid #5b992b;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    box-shadow: inset 0 1px 0 0 #9fd574;
+    -webkit-box-shadow: 0 1px 0 0 #9fd574 inset ;
+    -moz-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -ms-box-shadow: 0 1px 0 0 #9fd574 inset;
+    -o-box-shadow: 0 1px 0 0 #9fd574 inset;
+    color: white;
+    font-weight: bold;
+    padding: 6px 20px;
+    text-align: center;
+    text-shadow: 0 -1px 0 #396715;
+    
+    }
+    button:hover {
+    opacity:.85;
+    cursor: pointer;
+    }
+    button:active {
+    border: 1px solid #20911e;
+    box-shadow: 0 0 10px 5px #356b0b inset;
+    -webkit-box-shadow:0 0 10px 5px #356b0b inset;
+    -moz-box-shadow: 0 0 10px 5px #356b0b inset;
+    -ms-box-shadow: 0 0 10px 5px #356b0b inset;
+    -o-box-shadow: 0 0 10px 5px #356b0b inset;
+    }
+
+    /* champ focus et invalide */
+.contact_form input:focus:invalid, .contact_form textarea:focus:invalid {
+    background: #fff url(../images/contact/invalide.png) no-repeat 98% center;
+    background-size: 10px;
+    box-shadow: 0 0 5px #d45252;
+    border-color: #b03535
+    }
+    
+
+    /* champ focus et valide */
+.contact_form input:required:valid, .contact_form textarea:required:valid {
+    background: #fff url(../images/contact/valide.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #5cd053;
+    border-color: #28921f;
+    background-size: 10px;
+    }
+
+/* Ajout du triangle gauche message aide */
+
+.form_aide::before {
+    content: "\25C0"; /* triangle plein gauche au format unicode échappé */
+    color:#d45252;
+    position: absolute;
+    top:1px;
+    left:-6px;
+    }
+
+.contact_form input:focus + .form_aide{
+    display: inline; 
+}
+
+.contact_form input:required:valid + .form_aide {background: #28921f;}
+.contact_form input:required:valid + .form_aide::before {color:#28921f;}
+
+/* iFrame */
+
+iframe {
+    border-radius: 4px;
+    width: 475px;
+    margin-top: 10px;
+    margin-left: 2px;
+}
+
+.contact_form iframe{
+    margin-left: 20%;
+    margin-right: auto;
+}
