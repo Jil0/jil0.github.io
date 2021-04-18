@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Blog</title>
-    <meta name="description" content="Page contact de Jil0">
+    <title>Nous contacter</title>
+    <meta name="description" content="Nous contacter">
     <meta name="author" content="Julien Loehr">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/contact.css">
 </head>
 
 <body>  
@@ -14,7 +14,7 @@
         <header>
             <img src='../images/contact.png'>
             <h1>Page Contact</h1>
-            <h2>Voici mes informations de contact</h2>
+            <h2>Nous contacter</h2>
             <nav>
                 <ul>
                     <li><a href='../index.html'>Accueil</a></li>
@@ -26,62 +26,66 @@
         </header>
         <main>
 
-            <section>
-                <article>
-                    <h3>Nom</h3>
-                    LOEHR
-                </article>
-                <article>
-                    <h3>Prénom</h3>
-                    Julien
-                </article>
-                <article>
-                    <h3>Adresse postale</h3>
-                    HOENHEIM 67800 - Grand-Est
-                </article>
-                <article>
-                    <h3>Par Mail</h3>
-                    <a href="mailto:julien.loehr.auditeur@lecnam.net">julien.loehr.auditeur@lecnam.net</a>
-                </article>
-                <article>
-                    <h3>Par téléphone</h3>
-                    06 38 37 88 87
-                </article>
-                <article>
-                    <h3>Via LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/julienloehr/">https://www.linkedin.com/in/julienloehr/</a>
-                </article>
-                <article>
-                    <h3>Mon Github</h3>
-                    <a href="https://github.com/Jil0">https://github.com/Jil0</a>
-                </article>
-            </section>
+        <form class='contact_form'
+        action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+        method='POST'
+        name='contact_form'
+        target='myframe'>
 
-        
+       
+        <fieldset >
+            <legend>Formulaire de contact</legend>
+            
+            <ul>
+                
+                <li>
+                    <label for="nom"><b>Nom :</b></label>
+                    <input type="text" name="nom" id="nom" placeholder="DUPOND" required>
+                </li>
+                
+                <li>
+                    <label for="prenom"><b>Prénom :</b></label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Pierre" required>
+                </li>
+
+                <li>
+                    <label for="email"><b>Adresse e-mail :</b></label>
+                    <input type="email" name="email" id="email" placeholder="exemple@exemple.fr" required>
+                    <span class="form_aide">Format adapté : "lenom@ledomaine.com"</span>
+                </li>
+
+                <li>
+                    <label for="message" class="message"><b>Message :</b></label></br>
+                    <textarea rows="4" cols="42" name="message" id="message" placeholder="Votre message" required></textarea>
+                </li>
+                
+                <li>
+                    <label for="image"><b>Choisir une image :</b></label>
+                    <input type="file" name="image" class="import">
+                </li>
+
+                <button name="envoi" type="submit" value="normal">Envoi normal</button>
+                <button name="envoi" type="submit" value="important">Envoi important</button>
+                <input type='hidden' name='specialMode' value='forum'>
+
+            </ul>
+            
+        </fieldset>
+
+        <iframe id="myframe"
+            name="myframe"
+            title="myframe"
+            width="300"
+            height="200"
+            src="http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php">
+        </iframe>
+
+        </form>
+
         </main>
-        <footer>
-            <ul>
-                <li><a href='../index.html'>Accueil</a></li>
-                <li><a href='blog.html'>Blog</a></li>
-                <li><a href='cv.html'>CV</a></li>
-            </ul>
-            <ul>
-                <li><a href='../index.html'>Accueil</a></li>
-                <li><a href='blog.html'>Blog</a></li>
-                <li><a href='contact.html'>Contact</a></li>
-            </ul>
-            <ul>
-                <li><a href='../index.html'>Accueil</a></li>
-                <li><a href='cv.html'>CV</a></li>
-                <li><a href='contact.html'>Contact</a></li>
-            </ul> 
-            <ul>
-                <li><a href='blog.html'>Blog</a></li>
-                <li><a href='cv.html'>CV</a></li>
-                <li><a href='contact.html'>Contact</a></li>
-            </ul> 
-        </footer>    
+          
     </div>
+
     <script src="../js/jquery-3.3.1.min.js"></script>
     <script src="../js/myscript.js"></script>
 </body>
