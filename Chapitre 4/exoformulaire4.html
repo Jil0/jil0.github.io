@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercice 4</title>
+		<meta name="description" content="Exercice 4">
+		<meta name="author" content="Julien LOEHR">
+		<link rel="stylesheet" href="exoformulaire4.css">
+	</head>
+	<body>  
+
+        <form class='contact_form'
+        action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+        method='GET'
+        name='contact_form'
+        target='_blank'>
+
+       
+        <fieldset class="coordonnees">
+            <legend>Vos coordonnées</legend>
+            
+            <ul>
+                
+                <li>
+                    <label for="name"><b>Nom :</b></label>
+                    <input type="text" name="name" id="name">
+                </li>
+                
+                <li>
+                    <label for="prenom"><b>Prénom :</b></label>
+                    <input type="text" name="prenom" id="prenom">
+                </li>
+
+                <li>
+                    <label for="email"><b>Adresse e-mail :</b></label>
+                    <input type="email" name="email" id="email">
+                </li>
+
+                <li>
+                    <label for="verifemail"><b>Vérification adresse e-mail :</b></label>
+                    <input type="email" name="verifemail" id="verifemail">
+                </li>
+
+                <li>
+                    <label for="mdp"><b>Mot de passe :</b></label>
+                    <input type="password" name="mdp" id="mdp">
+                </li>
+
+                <li>
+                    <label for="verifmdp"><b>Vérification mot de passe :</b></label>
+                    <input type="password" name="verifmdp" id="verifmdp">
+                </li>
+
+            </ul>
+            
+        </fieldset>
+
+
+        <fieldset class="resa">
+            <legend>Votre réservation</legend>
+            
+            <ul>
+                
+                <li>
+                    <label for="room" class="room"><b>Type de chambre :</b></label>
+                    <select name="room" >
+                        <option value="">-choisir-</option>
+                        <option value="standard1">Un lit standard</option>
+                        <option value="standard2">Deux lits standard</option>
+                        <option value="queen1">Un lit queen size</option>
+                        <option value="queen2">Deux lits queen size</option>
+                        <option value="king1">Un lit king size</option>
+                        <option value="king2" selected>Deux lit king size<option>
+                    </select>
+                </li>
+                
+                <li>
+                    <label for="view" class="viewopt"><b>Vue :</b></label>
+                    <input type="radio" name="view" value="parking">Parking •
+                    <input type="radio" name="view" value="jardin">Jardin
+                </li>
+
+                <li>
+                    <label for="option" class="viewopt"><b>Option :</b></label>
+                    <input type="checkbox" name="parking_opt">Parking •
+                    <input type="checkbox" name="petitdej">Petit déjeuner •
+                    <input type="checkbox" name="piscine">Accès à la piscine
+                </li>
+
+                <li>
+                    <label for="demandes" class="demandes"><b>Demandes spéciales :</b></label></br>
+                </li>
+                <li>
+                    <textarea rows="4" cols="50" name="demandes" id="demandes"></textarea>
+                </li>
+
+            </ul>
+            
+        </fieldset>
+
+        <button class="validationButton" type="submit">Envoyer</button>
+        
+        </form>
+		<script src="myscript.js"></script>
+	</body>
+</html>

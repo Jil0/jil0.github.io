@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Leçon formulaires</title>
+		<meta name="description" content="Leçon sur l'apprentissage des formulaires">
+		<meta name="author" content="Julien LOEHR">
+		<link rel="stylesheet" href="mystyle.css?v=1.0">
+	</head>
+	<body>  
+
+        <form class='contact_form'
+        action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+        method='post'
+        name='contact_form'
+        target='_blank'>
+
+        <ul>
+            <li>
+                <h2>Contactez nous</h2>
+                <span class="champ_obligatoire">* Information obligatoire</span>
+            </li>
+
+            <li>
+                <label for="1_nom">Nom & Prénom : </label>
+                <input type="text" name="nom" id="1_nom" placeholder="Julien LOEHR" required>
+            </li>
+            <li>
+                <label for="1_email">Email : </label>
+                <input type="email" name="email" id="1_email" placeholder="julien.loehr.auditeur@cnam.net" required>
+                <span class="form_aide">Format adapté : "lenom@ledomaine.com"</span>
+            </li>
+            
+            <li>
+                <label for="1_siteweb">Site web : </label>
+                <input type="url" name="siteweb" id="1_siteweb" placeholder="http://cnam.fr" required>
+                <span class="form_aide">Format adapté : "http://www.ledomaine.fr"</span>
+            </li>
+
+            <li>
+                <label for="1_message">Message : </label>
+                <textarea name="message" cols="45" rows="5" id="1_message" required></textarea>
+            </li>
+            <li>
+                <button class="validationButton" type="submit">Envoyer</button>
+            </li>
+
+        </ul>
+    </form>
+
+
+
+
+		<script src="myscript.js"></script>
+	</body>
+</html>

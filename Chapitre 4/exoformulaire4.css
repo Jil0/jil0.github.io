@@ -1,0 +1,104 @@
+/* Exo formulaire CSS */
+
+*:focus {
+    outline: none ;
+}
+
+body {
+    font: 14px/21px "Lucida Sans", "Lucida Grande", "Lucida Sans Unicode";
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Conteneur */
+
+.contact_form fieldset {
+    width: 550px;
+}
+
+/* Liste */
+
+.contact_form .coordonnees ul {
+    width: 550px;
+    list-style: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+}
+
+.contact_form .resa ul {
+    width: 550px;
+    height: 230px;
+    list-style: none;
+    list-style-position: outside;
+    margin: 0px;
+    padding: 0px;
+    margin-left: 50px;
+}
+
+
+/* Coordonnees */
+
+.contact_form .coordonnees li {
+    padding: 7px;
+    position: relative;
+}
+
+.contact_form .coordonnees label {
+    width: 220px;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+}
+
+.contact_form .coordonnees input{
+    height: 15px;
+    width: 150px;
+    padding: 5px 8px;
+}
+
+
+/* Résa */
+
+.contact_form .resa li {
+    padding: 4px;
+}
+
+.contact_form .resa .room{
+    width: 150px;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+}
+
+.contact_form .resa .viewopt{
+    width: 80px;
+    display: inline-block;
+    float: left;
+}
+
+.contact_form .resa input {
+    height: 15px;
+    width: 20px;
+}
+
+.contact_form .resa li .demandes{
+    width: 200px;
+    float: left;
+
+}
+
+/* Demandes spéciales */
+
+.contact_form textarea {
+    padding: 0px;
+    width: 300px;
+    display: block;
+}
+
+.validationButton {
+    margin-top: 40px;
+}

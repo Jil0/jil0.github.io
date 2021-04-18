@@ -1,0 +1,57 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercice 1</title>
+		<meta name="description" content="Exercice 1">
+		<meta name="author" content="Julien LOEHR">
+		<link rel="stylesheet" href="exoformulaire1.css">
+	</head>
+	<body>  
+
+        <form class='contact_form'
+        action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+        method='get'
+        name='contact_form'
+        target='_blank'>
+
+        <ul> 
+            <li>
+                <label for="value1">Valeur 1 :</label>
+                <input type="text" name="valeur1" id="value1">
+            </li>
+            <li>
+                <label for="operator">Opérateur :</label>
+                <select name="operator" >
+                    <option value="">-choisir-</option>
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">*</option>
+                    <option value="/">/<option>
+                </select>
+            </li>
+            
+            <li>
+                <label for="value2">Valeur 2 :</label>
+                <input type="text" name="valeur2" id="value2">
+            </li>
+            <li>
+                <button class="validationButton" type="submit">Envoyer</button>
+            </li>
+            
+
+        </ul>
+
+
+
+        </form>
+
+        
+
+
+
+
+		<script src="myscript.js"></script>
+	</body>
+</html>

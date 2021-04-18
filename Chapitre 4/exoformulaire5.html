@@ -1,0 +1,70 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Exercice 5</title>
+		<meta name="description" content="Exercice 5">
+		<meta name="author" content="Julien LOEHR">
+		<link rel="stylesheet" href="exoformulaire5.css">
+	</head>
+	<body>  
+
+        <form class='contact_form'
+        action='http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php'
+        method='POST'
+        name='contact_form'
+        target='myframe'>
+
+       
+        <fieldset >
+            <legend>Formulaire de forum</legend>
+            
+            <ul>
+                
+                <li>
+                    <label for="nom"><b>Nom :</b></label>
+                    <input type="text" name="nom" id="nom" placeholder="DUPOND" required>
+                </li>
+                
+                <li>
+                    <label for="prenom"><b>Prénom :</b></label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Pierre" required>
+                </li>
+
+                <li>
+                    <label for="email"><b>Adresse e-mail :</b></label>
+                    <input type="email" name="email" id="email" placeholder="exemple@exemple.fr" required>
+                    <span class="form_aide">Format adapté : "lenom@ledomaine.com"</span>
+                </li>
+
+                <li>
+                    <label for="message" class="message"><b>Message :</b></label></br>
+                    <textarea rows="4" cols="42" name="message" id="message" placeholder="Votre message" required></textarea>
+                </li>
+                
+                <li>
+                    <label for="image"><b>Choisir une image :</b></label>
+                    <input type="file" name="image" class="import">
+                </li>
+
+                <button name="envoi" type="submit" value="normal">Envoi normal</button>
+                <button name="envoi" type="submit" value="important">Envoi important</button>
+                <input type='hidden' name='specialMode' value='forum'>
+
+            </ul>
+            
+        </fieldset>
+
+        <iframe id="myframe"
+            name="myframe"
+            title="myframe"
+            width="300"
+            height="200"
+            src="http://www.action-creation.fr/cnam/HTML_CSS/chapitre4/validateForm.php">
+        </iframe>
+
+        </form>
+		<script src="myscript.js"></script>
+	</body>
+</html>
