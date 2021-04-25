@@ -1,0 +1,52 @@
+/* CSS de la navbar */
+
+ul {
+    list-style: none;
+    list-style-position: outside;
+    background: rgb(57,57,57);
+    background: linear-gradient(0deg, rgba(57,57,57,1) 0%, rgba(0,0,0,1) 100%);
+    padding-left: 5px;
+}
+
+li {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    width: auto;
+    margin: 10px auto 10px auto;
+    padding: 0 10px 0 10px;
+    border-right: solid;
+    border-width: 1px;
+    border-color: white;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+@media all and (max-width: 800px){
+    
+   ul{
+        width: 280px;
+        padding : 1px 0px 1px 0px;
+        background: rgb(133, 1, 1);
+   }
+
+   li{
+        display: list-item;
+        background: rgb(75,13,13);
+        background: linear-gradient(0deg, rgba(75,13,13,1) 50%, rgb(173, 128, 132) 50%);
+        border-radius : 7px;
+        height: 26px;
+        border: solid 1px black;
+        margin: 5px;
+        padding-top: 6px;
+   }
+
+   a{
+       color:white;
+   }
+}
+
+

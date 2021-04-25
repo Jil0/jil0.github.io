@@ -1,0 +1,629 @@
+/* CSS du projet web */
+
+html {
+    background-color: rgb(244, 238, 236);
+    height: 1600px;
+}
+
+.page {
+    width: 1100px;
+    background-image: url(./ressourcesProjet/background.png);
+    margin-left: auto;
+    margin-right: auto;
+    height: 1537px;
+}
+
+header {
+    margin-top: 25px;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img {
+    width: 100%;
+}
+
+.conteneur_article {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 14px;
+    margin-right: 10px;
+    margin-top: 20px;
+    
+}
+
+.article {
+    background: rgba(249,245,244, 0.7);
+    width: 23%;
+    height: 305px;
+    margin: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -3px #000000;
+}
+
+.article h2{
+    width: 100%;
+    font-size: 0.8em;
+    font-style: italic;
+    color: rgb(158,155, 153);
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.article h1{
+    width: 100%;
+    font-size: 0.95em;
+    color: black;
+    text-align: center;
+}
+
+.article img {
+    width: auto;
+    height: 100px;
+    display: block;
+    margin: 10px auto;   
+}
+
+.article p {
+    margin: 0 20px 0 10px;
+    color: black;
+    font-size: 0.90em;
+    line-height: 20px;
+}
+
+.article p::first-letter {
+    -webkit-initial-letter: 3;
+    color: rgb(182, 0, 33);
+}
+
+.article .inRed {
+    color: rgb(182, 0, 33);
+}
+
+/* Only for the second article because of the symbol not supported by initial-letter */
+.article2_firstletter p::first-letter {
+    -webkit-initial-letter: 3;
+    color: rgb(182, 0, 33);
+}
+
+/* Only for the second article because of the symbol not supported by initial-letter */
+.article .p_none p::first-letter{
+    -webkit-initial-letter: 0;
+}
+
+
+.article a {
+    color: rgb(182, 0, 33);
+    text-decoration: none;
+    
+}
+
+.article ul {
+    width: 100%;
+    list-style: none;
+    list-style-position: outside;
+    color: rgb(182, 0, 33);
+    padding-inline-start: 0;
+    margin: 0 20px 0 10px;
+    font-size: 0.90em;
+    line-height: 18px;
+}
+.article li {
+    margin: 7px 0;
+}
+
+/* SECTION REFERENCES */
+
+.ref_ext {
+    margin-top: 25px;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_references {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.conteneur_ref {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: 14px;
+    margin-right: 10px;
+    margin-top: 12px;
+    
+}
+
+.ref {
+    background: rgba(249,245,244, 0.7);
+    width: 23%;
+    height: 180px;
+    margin: 7px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px -3px #000000;
+}
+
+.ref h2{
+    width: 100%;
+    font-size: 0.8em;
+    font-style: italic;
+    color: rgb(158,155, 153);
+    text-align: center;
+    margin-bottom: -5px;
+}
+
+.ref h1{
+    width: 100%;
+    font-size: 0.95em;
+    color: black;
+    text-align: center;
+}
+
+.ref h1::first-letter{
+    font-size: 1.1em;
+}
+
+.ref img {
+    width: auto;
+    height: 100px;
+    display: block;
+    margin: 10px auto;   
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 30px;
+    width: 1060px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_warning {
+
+    width: 100%;
+}
+
+footer p {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 0.8em;
+    color: rgb(158,155, 153);
+    line-height: 20px;
+}
+
+.underline {
+    text-decoration: underline;
+    color: rgb(190,183, 181);
+}
+
+/********************** RESPONSIVE DESIGN **********************/
+
+@media all and (max-width: 1100px){
+
+    html {
+        background-color: rgb(244, 238, 236);
+        height: 2600px;
+    }
+
+    .page {
+        width: 550px;
+        background-image: url(./ressourcesProjet/background.png);
+        margin-left: auto;
+        margin-right: auto;
+        height: 2550px;
+    }
+
+    header {
+        margin-top: 20px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header img {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .conteneur_article {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 18px;
+    }
+    
+    .article {
+        background: rgba(249,245,244, 0.7);
+        width: 44.5%;
+        height: 300px;
+        margin: 7px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px -3px #000000;
+    }
+    
+    .article h2{
+        width: 100%;
+        font-size: 0.8em;
+        font-style: italic;
+        color: rgb(158,155, 153);
+        text-align: center;
+        margin-bottom: -5px;
+    }
+    
+    .article h1{
+        width: 100%;
+        font-size: 0.95em;
+        color: black;
+        text-align: center;
+    }
+    
+    .article img {
+        width: auto;
+        height: 100px;
+        display: block;
+        margin: 10px auto;   
+    }
+    
+    .article p {
+        margin: 0 20px 0 10px;
+        color: black;
+        font-size: 0.90em;
+        line-height: 20px;
+    }
+    
+    .article p::first-letter {
+        -webkit-initial-letter: 3;
+        color: rgb(182, 0, 33);
+    }
+    
+    .article .inRed {
+        color: rgb(182, 0, 33);
+    }
+    
+    /* Only for the second article because of the symbol not supported by initial-letter */
+    .article2_firstletter p::first-letter {
+        -webkit-initial-letter: 3;
+        color: rgb(182, 0, 33);
+    }
+    
+    /* Only for the second article because of the symbol not supported by initial-letter */
+    .article .p_none p::first-letter{
+        -webkit-initial-letter: 0;
+    }
+    
+    
+    .article a {
+        color: rgb(182, 0, 33);
+        text-decoration: none;
+        
+    }
+    
+    .article ul {
+        width: 100%;
+        list-style: none;
+        list-style-position: outside;
+        color: rgb(182, 0, 33);
+        padding-inline-start: 0;
+        margin: 0 20px 0 10px;
+        font-size: 0.90em;
+        line-height: 18px;
+    }
+    .article li {
+        margin: 7px 0;
+    }
+    
+    /* SECTION REFERENCES */
+    
+    .ref_ext {
+        margin-top: 25px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .image_references {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .conteneur_ref {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-left: 18px;
+    }
+    
+    .ref {
+        background: rgba(249,245,244, 0.7);
+        width: 44.5%;
+        height: 180px;
+        margin: 7px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px -3px #000000;
+    }
+    
+    .ref h2{
+        width: 100%;
+        font-size: 0.8em;
+        font-style: italic;
+        color: rgb(158,155, 153);
+        text-align: center;
+        margin-bottom: -5px;
+    }
+    
+    .ref h1{
+        width: 100%;
+        font-size: 0.95em;
+        color: black;
+        text-align: center;
+    }
+    
+    .ref h1::first-letter{
+        font-size: 1.1em;
+    }
+    
+    .ref img {
+        width: auto;
+        height: 100px;
+        display: block;
+        margin: 10px auto;   
+    }
+    
+    /* FOOTER */
+    
+    footer {
+        margin-top: 30px;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .image_warning {
+    
+        width: 100%;
+    }
+    
+    footer p {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 0.8em;
+        color: rgb(158,155, 153);
+        line-height: 20px;
+    }
+    
+    .underline {
+        text-decoration: underline;
+        color: rgb(190,183, 181);
+    }
+
+}
+
+@media all and (max-width: 650px){
+
+    html {
+        background-color: rgb(244, 238, 236);
+        height: 4680px;
+    }
+    .page {
+        width: 390px;
+        background-image: url(./ressourcesProjet/background.png);
+        margin-left: auto;
+        margin-right: auto;
+        height: 4635px;
+    }
+
+    header {
+        margin-top: 20px;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    header img {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .conteneur_article {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: 19px;
+    }
+    
+    .article {
+        background: rgba(249,245,244, 0.7);
+        width: 87%;
+        height: auto;
+        margin: 7px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px -3px #000000;
+        padding-bottom: 5px;
+    }
+    
+    .article h2{
+        width: 100%;
+        font-size: 0.8em;
+        font-style: italic;
+        color: rgb(158,155, 153);
+        text-align: center;
+        margin-bottom: -5px;
+    }
+    
+    .article h1{
+        width: 100%;
+        font-size: 0.95em;
+        color: black;
+        text-align: center;
+    }
+    
+    .article img {
+        width: auto;
+        height: 100px;
+        display: block;
+        margin: 10px auto;   
+    }
+    
+    .article p {
+        margin: 0 20px 0 10px;
+        color: black;
+        font-size: 0.90em;
+        line-height: 20px;
+    }
+    
+    .article p::first-letter {
+        -webkit-initial-letter: 3;
+        color: rgb(182, 0, 33);
+        margin-right: 5px;
+    }
+    
+    .article .inRed {
+        color: rgb(182, 0, 33);
+    }
+    
+    /* Only for the second article because of the symbol not supported by initial-letter */
+    .article2_firstletter p::first-letter {
+        -webkit-initial-letter: 3;
+        color: rgb(182, 0, 33);
+    }
+    
+    /* Only for the second article because of the symbol not supported by initial-letter */
+    .article .p_none p::first-letter{
+        -webkit-initial-letter: 0;
+        margin-right: 0px;
+    }
+    
+    
+    .article a {
+        color: rgb(182, 0, 33);
+        text-decoration: none;
+        
+    }
+    
+    .article ul {
+        width: 100%;
+        list-style: none;
+        list-style-position: outside;
+        color: rgb(182, 0, 33);
+        padding-inline-start: 0;
+        margin: 0 20px 0 10px;
+        font-size: 0.90em;
+        line-height: 18px;
+    }
+    .article li {
+        margin: 7px 0;
+    }
+    
+    /* SECTION REFERENCES */
+    
+    .ref_ext {
+        margin-top: 25px;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .image_references {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .conteneur_ref {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-left: 18px;
+    }
+    
+    .ref {
+        background: rgba(249,245,244, 0.7);
+        width: 87%;
+        height: 180px;
+        margin: 7px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 5px -3px #000000;
+    }
+    
+    .ref h2{
+        width: 100%;
+        font-size: 0.8em;
+        font-style: italic;
+        color: rgb(158,155, 153);
+        text-align: center;
+        margin-bottom: -5px;
+    }
+    
+    .ref h1{
+        width: 100%;
+        font-size: 0.95em;
+        color: black;
+        text-align: center;
+    }
+    
+    .ref h1::first-letter{
+        font-size: 1.1em;
+    }
+    
+    .ref img {
+        width: auto;
+        height: 100px;
+        display: block;
+        margin: 10px auto;   
+    }
+    
+    /* FOOTER */
+    
+    footer {
+        margin-top: 30px;
+        width: 87%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .image_warning {
+    
+        width: 100%;
+    }
+    
+    footer p {
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-size: 0.8em;
+        color: rgb(158,155, 153);
+        line-height: 20px;
+    }
+    
+    .underline {
+        text-decoration: underline;
+        color: rgb(190,183, 181);
+    }
+
+}
